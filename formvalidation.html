@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+    <form>
+      <label>Name:  </label>
+      <input type="text" id="name"><br>
+      <label>Email:</label>
+      <input type="email" id="mail"><br>
+      <span id="emailerror" style="color: red;"></span><br>
+      <label>Number:</label>
+      <input type="text" id="number"><br>
+      <label>Country:</label>
+      <input type="text" id="country"><br>
+      <input type="radio" id="male" name="gender" value="Male">Male
+      <input type="radio" id="female" name="gender" value="Female">Female
+      <input type="button" value="submit" onclick="validate()">
+    </form>
+</body>
+</html>

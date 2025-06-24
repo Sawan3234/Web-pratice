@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function find(){
+    var gen=document.getElementsByName("gender");
+    var selectedGender = null;
+    for(var i=0;i<gen.length;i++)
+    {
+        if(gen[i].checked){
+            selectedGender=gen[i];
+            break;
+        }
+    }
+    if(selectedGender && selectedGender.value==="male")
+    {
+        alert("you are male");
+    }
+    else if(selectedGender & &selectedGender==="female"){
+        alert("you are female");
+    }
+    else{
+        alert("select gender!");
+    }
+}
+</script>
+<body>
+    <form>
+        Male:<input type="radio" name="gender" value="male">
+        Female:<input type="radio" name="gender" value="female"><br>
+        <input type="submit" onclick="find()" value="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var college={faculty:'bcs.csit',year:2025,subject:'web'};
+        document.write(college.faculty,college.year,college.subject);
+        college.location='<br>lalitpur ';
+        document.write(college.location);
+        delete college.faculty;
+        "<br>"
+        document.write(college.location ,college.year,college.subject);
+
+
+    </script>
+    <script>
+        var arr= new Array("1","2","3","5","2");
+        var str=arr.join();
+        document.write("<br>str :"+str);
+        var str=arr.join(".");
+        document.write("<br>str :"+str);
+        var str=arr.join("+");
+        document.write("<br>str :"+str);
+        var a=arr.indexOf("1");
+        document.write("the first is in:"+a);
+        var b=arr.indexOf("2",2);
+        document.write("the second is in:"+b);
+        var element=arr.pop()
+        document.write("<br>element is :"+element);
+        document.write("<br>");
+      
+        var element=arr.push("15");
+        document.write("new array is:"+arr);
+        </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name=prompt("what's her name:");
+        var percentage=prompt("how much do you love \t"+name);
+        confirm("are you sure?");
+        if(percentage>80){
+        alert("your are madely in love ");
+        }
+        else{
+            alert("you are just attracted to her");
+            alert("laude lag jayega tera :)")
+        }
+    </script>
+    <input type="button" onclick="handleprompt('chalyo');" value="thicha">
+    <div id="output"></div>
+
+    <script>
+        function handleprompt() {
+            // Show prompt and store value
+            let value = prompt("Enter something:");
+        
+            // Display only the value (no label)
+            document.getElementById("output").innerHTML = value;
+        }
+    </script>
+</body>
+</html>
